@@ -11,7 +11,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('image.png');
+    background-color: #055c9d;
+    /* background-image: url('image.png'); */
     background-position: center;
     background-size: cover;
 }
@@ -88,6 +89,8 @@ body {
 
 .remember-forgot a:hover {
     text-decoration: underline;
+    color: red;
+    
 }
 
 .wrapper .btn {
@@ -100,7 +103,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #055c9d;
     font-weight: 600;
 }
 
