@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="profile-picture-upload">
+                <div class="profile-picture-area">
+                    <img id="profile-picture-preview" src="#" alt="Profile Picture Preview" style="display: none;">
+                    <label for="profile-picture" class="upload-icon">+</label>
+                    <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+                </div>
+            </div>
+            <div class="profile-details">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+                <label for="service">Service:</label>
+                <input type="text" id="service" name="service" placeholder="Service/Skill">
+                <label for="tel">Tel:</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Telephone">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Location">
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="bio">
+                <textarea id="bio" name="bio" placeholder="Bio"></textarea>
+            </div>
+            <div class="rating">
+                <label for="rating">Rating:</label>
+                <div class="stars">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
