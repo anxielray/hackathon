@@ -23,7 +23,7 @@ body {
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid #fff;
     padding: 30px 40px;
     color: #fff;
     padding:30px 40px;
@@ -31,6 +31,10 @@ body {
 
 .wrapper h1 {
     font-size: 36px;
+   text-shadow: 1px 1px 0 #000, /* Shadow to the right and down */
+    -1px -1px 0 #000, /* Shadow to the left and up */
+     1px -1px 0 #000, /* Shadow to the right and up */
+    -1px 1px 0 #000; 
     text-align: center;
 }
 
@@ -47,7 +51,7 @@ body {
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid whitesmoke;
     border-radius: 40px;
     font-size: 16px;
     color: #fff;
@@ -107,6 +111,14 @@ body {
     font-weight: 600;
 }
 
+.wrapper .btn:hover {
+    color: whitesmoke;
+    background-color: black;
+    box-shadow:  1px 1px 0 #fff, /* Shadow to the right and down */
+    -1px -1px 0 #ffffff, /* Shadow to the left and up */
+     1px -1px 0 #ffffff, /* Shadow to the right and up */
+    -1px 1px 0 #ffffff; ;
+}
 .wrapper .register-link {
     font-size: 14.5px;
     text-align: center;

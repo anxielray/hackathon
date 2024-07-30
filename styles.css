@@ -6,7 +6,7 @@ body, html {
 }
 
 body {
-    background: url('static/bit1.jpg') no-repeat center center fixed;
+    background: url('bit1.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
