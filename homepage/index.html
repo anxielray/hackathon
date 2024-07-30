@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocatalysts - Bridging the Service Gap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Cryptocatalysts</h1>
+                <p>Connecting clients and service providers securely with blockchain technology.</p>
+            </div>
+        </section>
+        
+        <section class="search-services">
+            <div class="search-bar">
+                <select id="services-dropdown" onchange="showServiceDescription()">
+                    <option value="">Select a service...</option>
+                    <option value="furniture">Furniture - Carpenter</option>
+                    <option value="basketry">Basketry</option>
+                    <option value="pottery">Pottery</option>
+                    <option value="catering">Catering</option>
+                    <option value="merry-go-round">Merry-go-round</option>
+                </select>
+                <button onclick="searchService()">Search</button>
+            </div>
+            <div class="services-description">
+                <h3>About Our Services</h3>
+                <p id="service-description">Select a service to learn more about it.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Cryptocatalysts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showServiceDescription() {
+            const descriptions = {
+                "furniture": "Our carpenters provide high-quality furniture making and repair services. Custom designs available.",
+                "basketry": "Our skilled artisans offer beautiful and durable basketry products made from natural materials.",
+                "pottery": "Discover a range of pottery services, including custom ceramics and pottery classes.",
+                "catering": "Professional catering services for all events, ensuring delicious food and exceptional service.",
+                "merry-go-round": "Engage in community merry-go-round activities to support each other financially."
+            };
+
+            const selectedService = document.getElementById("services-dropdown").value;
+            const description = descriptions[selectedService] || "Select a service to learn more about it.";
+            document.getElementById("service-description").textContent = description;
+        }
+
+        function searchService() {
+            const selectedService = document.getElementById("services-dropdown").value;
+            if (selectedService) {
+                alert(`Searching for: ${selectedService}`);
+                // Implement the search functionality here.
+            } else {
+                alert("Please select a service to search for.");
+            }
+        }
+    </script>
+</body>
+
+</html>
