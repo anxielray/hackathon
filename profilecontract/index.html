@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="topbar">
+                <a href="#">Home</a>
+                <a href="#">Work</a>
+                <a href="#">Support</a>
+                <a href="#">Logout</a>
+            </div>
+            <div class="content-row">
+                <div class="sidebar">
+                    <div class="card-body">
+                        <div class="profile-img-container">
+                            <img id="profileImg" src="static/business-695489_1280.jpg" class="profile-img" alt="Profile Image">
+                        </div>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="previewPhoto(event)">
+                        <button class="upload-button" onclick="document.getElementById('fileInput').click();">Change Photo</button>
+                        <div class="mt-3">
+                            <h3>Bark Macklin</h3>
+                            <a href="#">Home</a>
+                            <a href="#">Work</a>
+                            <a href="#">Support</a>
+                            <a href="#">Settings</a>
+                            <a href="#">Signout</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about">
+                    <form class="card mb-3 content" id="profileForm">
+                        <h1 class="m-3 pt-3">About</h1>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="fullName">Full Name</label>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                    <input type="text" id="fullName" name="fullName" value="Burt Macklin">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                    <input type="email" id="email" name="email" value="abc@gmail.com">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                    <input type="text" id="phone" name="phone" value="0756583686">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="address">Address</label>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                    <input type="text" id="address" name="address" value="Street No. 4, XYZ">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
